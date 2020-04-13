@@ -13,12 +13,12 @@ Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o bus
     <form class="form-stacked">
       <label>
         Email
-        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Email Address" }}">
+        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Dirección de correo" }}">
       </label>
 
       <label>
         Content
-        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "What would you like to say?" }}" style="resize: vertical"></textarea>
+        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "Lo que me quieras contar ^_^" }}" style="resize: vertical"></textarea>
       </label>
 
       <input type="text" name="_gotcha" style="display:none" />
@@ -29,11 +29,11 @@ Si estas aquí es que quieres contarme algo, puedes rellenar el formulario o bus
     <form action="https://formspree.io/{{ site.email }}" method="POST" class="form-stacked">
       <label>
         Email
-        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Email Address" }}">
+        <input type="text" name="email" class="field-light" placeholder="{{ site.text.contact.email | default: "Dirección de correo" }}">
       </label>
       <label>
         Content
-        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "What would you like to say?" }}" style="resize: vertical"></textarea>
+        <textarea type="text" name="content" class="field-light" rows="5" placeholder="{{ site.text.contact.content | default: "Lo que me quieras contar ^_^" }}" style="resize: vertical"></textarea>
       </label>
 
       <input type="hidden" name="_next" value="{{ site.baseurl }}/thanks/" />
